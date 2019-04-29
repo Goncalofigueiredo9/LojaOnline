@@ -1,5 +1,6 @@
 body {
   background-color: #EEE;
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -58,26 +59,41 @@ td {
 
 .navbar {
   width: 100%;
-  background-color: #555;
+  box-shadow: -10px -10px 25px #000;
+  text-transform: uppercase;
+  background-color: #fff;
   overflow: auto;
 }
 
-.navbar a {
+.nav1 {
+  font-size: 15px;
   float: left;
-  padding: 12px;
-  color: white;
+  padding: 18px;
+  color: #000;
   text-decoration: none;
-  font-size: 17px;
+  transition: 0.2s;
 }
 
-.navbar a:hover {
-  background-color: #000;
+.nav1:hover {
+  background-color: #d9d9d9;
 }
 
 .active {
-  background-color: #FF8000;
+  float: left;
+  padding: 18px;
+  color: #ff6600;
+  background-color: #fff;
+  text-decoration: none;
+  font-size: 15px;
   font-weight: bold;
+  transition: 0.5s;
 }
+
+.active:hover {
+  background-color: #ff6600;
+  color: #fff;
+}
+
 
 @media screen and (max-width: 500px) {
   .navbar a {
