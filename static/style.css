@@ -36,7 +36,7 @@ fieldset {
 
 table, td {
   background-color: lightgray;
-  border: 30px solid lightgray;
+  border: 30px solid gray;
   border-collapse: collapse;
 }
 
