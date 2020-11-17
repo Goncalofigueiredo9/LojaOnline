@@ -1,4 +1,4 @@
-#!"C:\Users\Gonçalo Figueiredo\PycharmProjects\LojaOnline1\venv\Scripts\python.exe" -x
+#!"C:\Users\Gonçalo Figueiredo\PycharmProjects\LojaOnline\venv\Scripts\python.exe" -x
 # EASY-INSTALL-ENTRY-SCRIPT: 'pip==10.0.1','console_scripts','pip'
 __requires__ = 'pip==10.0.1'
 import re

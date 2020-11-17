@@ -4,11 +4,17 @@
 {% endblock %}
 
 {% block conteudo %}
+<style>
+    body {
+    background-image: url("/static/backlogin.png");
+    background-attacthment: fixed;
+    background-position: center;
+   }
+</style>
 <center>
     <h1>Iniciar Sessão</h1>
     <form method="post">
         <fieldset>
-            <legend>Introduza os seus dados</legend>
             <h4>Utilizador</h4>
             <input type="text" name="utilizador" required>
             <p><br></p>
@@ -16,20 +22,12 @@
             <input type="password" name="passe" required>
             <p><br></p>
             <input type="submit" value="Iniciar Sessão">
+            <br>
+            <br>
+            <a href="newpasse">Esqueceu-se da password ?</a>
         </fieldset>
     </form>
     {% if erro %}<h4>{{ erro }}</h4>{% endif %}
 </center>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 {% endblock %}
