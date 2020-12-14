@@ -19,27 +19,46 @@
 {% set total = loja.total() %}
 
 {% set icons = ['fas fa-question', 'fas fa-archive', 'fas fa-microchip', 'fas fa-bone'] %}
-<div class="navbar">
-  <a class="active" href="/"></i>  Clean It Up </a>
-  <a class="nav1" href="/registo">Registo</a>
-  <a class="nav1" href="/login">Login</a>
-  <a class="nav1" href="/carrinho_ini">Carrinho</a>
-  {% if usr %}
-  <a class="nav1" href="/logout">Logout</a>
-  {% endif %}
-</div>
-{% block conteudo %}
-{% endblock %}
+<header>
+    <div class="navbar">
+        <a class="" href="/"><img src="/static/logo.png" alt="Clean It Up"/>
+        <a class="nav1" href="/registo">Registo</a>
+        <a class="nav1" href="/login">Iniciar Sessão</a>
+        <a class="nav1" href="/carrinho_ini">Carrinho</a>
+        {% if usr %}
+        <a class="nav1" href="/logout">Logout</a>
+        {% endif %}
+    </div>
+        {% block conteudo %}
+        {% endblock %}
+</header>
 
 
-<div class="footer">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Add font awesome icons -->
-<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-  <p>© 2020 Clean It Up. Todos os direitos reservados.</p>
-  <p></p>
-</div>
+<footer class="footer">
+    <div class="container">
+    <a class="footerlogo" href="#">
+        <img src="/static/logo2.png"/>
+    </a>
+    <div class="social">
+                <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="http://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+    <div class="info1">
+        <a class="removerunderline" href="/sobrenos">Sobre nós</a>
+        <a class="removerunderline" href="#">Contacto</a>
+    </div>
+    <div class="info2">
+        <a class="removerunderline" href="#">Garantia de qualidade</a>
+        <a class="removerunderline" href="#">Suporte</a>
+    </div>
+    <div class="copyright">
+    <p class="copyright">© 2020 Clean It Up. Todos os direitos reservados.</p>
+    </div>
+    </div>
+</footer>
 </body>
 </html>
+

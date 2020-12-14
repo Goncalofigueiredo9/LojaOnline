@@ -75,7 +75,6 @@ def encomendar():
     loja.encomendar = True
     return redirect(request.referrer)
 
-
 @app.route('/sub/<int:linha>')
 def subcarrinho(linha):
     loja.subcarrinho(linha)
@@ -120,6 +119,9 @@ def logout():
     loja.reset()
     return redirect('/')
 
+@app.route('/sobrenos')
+def sobrenos():
+    return render_template('sobrenos.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
